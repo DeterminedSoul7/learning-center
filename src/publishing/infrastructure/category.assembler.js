@@ -1,6 +1,7 @@
 import {Category} from "../domain/model/category.entity.js";
 
 export class CategoryAssembler {
+    //Patrón Assembler
     static toEntityFromResource(resource) {
         return new Category({...resource});
     }
